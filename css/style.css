@@ -45,9 +45,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: calc(100% / 10);
-    height: calc(100% / 10);
+    --my-split:10;
+    width: calc(100% / var(--my-split));
+    height: calc(100% / var(--my-split));
 
     border: 1px solid black;
 

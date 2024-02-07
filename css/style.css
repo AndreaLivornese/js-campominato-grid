@@ -6,26 +6,37 @@
 
 /* reset */
 
-
+header{
+    height: 100px;
+}
 
 
 
 main{
     
+    height: calc(100vh - 100px - 100px);  /*altezza viewport - altezza header - altezza footer*/
+
     background-color: #083b4c;
 }
 
 .container{
+    display: flex;
+    justify-content: center;
+
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 
-    padding: 0;
+    padding: 20px;
+
+    height: inherit;
 }
 
 #grid{
     display: flex;
     flex-flow: row wrap;
+    width: 600px;
+    height: 100%;
 }
 
 .square{
@@ -33,8 +44,8 @@ main{
     justify-content: center;
     align-items: center;
 
-    width: 100px;
-    height: 100px;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
 
     border: 1px solid black;
 
@@ -43,4 +54,9 @@ main{
 
 .active{
     background-color: #0cd6a1;
+    font-weight: bold;
+}
+
+footer{
+    height: 100px;
 }

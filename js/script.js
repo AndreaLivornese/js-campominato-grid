@@ -24,7 +24,6 @@ document.querySelector("#btn-play").addEventListener("click",
 
             gridEl.append(newDivEl);
 
-
         }
 
     }

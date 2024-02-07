@@ -16,6 +16,8 @@ main{
     
     height: calc(100vh - 100px - 100px);  /*altezza viewport - altezza header - altezza footer*/
 
+    overflow: auto;
+
     background-color: #083b4c;
 }
 

@@ -12,6 +12,16 @@ document.querySelector("#btn-play").addEventListener("click",
             newDivEl.innerText = i;
             newDivEl.classList.add("square");
 
+            newDivEl.addEventListener("click",
+                function(){
+                    this.classList.toggle("active");
+                    console.log(this.innerText);
+
+                }
+
+
+            );
+
             gridEl.append(newDivEl);
 
 
